@@ -20,11 +20,7 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum BookReportSampleAppAsset {
-  public enum Assets {
   public static let accentColor = BookReportSampleAppColors(name: "AccentColor")
-  }
-  public enum PreviewAssets {
-  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

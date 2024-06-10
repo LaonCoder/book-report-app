@@ -16,11 +16,7 @@ let project = Project(
             ),
             sources: ["BookReportApp/Sources/**"],
             resources: ["BookReportApp/Resources/**"],
-            dependencies: [
-                .external(name: "Alamofire", condition: .none),
-                .external(name: "Realm", condition: .none),
-                .external(name: "RealmSwift", condition: .none)
-            ]
+            dependencies: []
         ),
         .target(
             name: "BookReportSampleApp",
@@ -30,11 +26,11 @@ let project = Project(
             deploymentTargets: .iOS("16.0"),
             infoPlist: .extendingDefault(
                 with: [
-                    "UILaunchStoryboardName": "LaunchScreen.storyboard",
+                    "UILaunchStoryboardName": "SampleLaunchScreen.storyboard",
                 ]
             ),
-            sources: ["BookReportApp/Sources/**"],
-            resources: ["BookReportApp/Resources/**"],
+            sources: ["BookReportSampleApp/Sources/**"],
+            resources: ["BookReportSampleApp/Resources/**"],
             dependencies: [
                 .external(name: "Alamofire", condition: .none),
                 .external(name: "Realm", condition: .none),
