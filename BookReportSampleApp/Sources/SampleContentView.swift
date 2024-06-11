@@ -11,8 +11,14 @@ public struct SampleContentView: View {
     public init() {}
 
     public var body: some View {
-        Text("Sample App")
-            .padding()
+        NavigationStack {
+            List {
+                NavigationLink(destination: BookFlipView()) {
+                    Text("Page flip")
+                }
+            }
+            .navigationTitle("Sample App")
+        }
     }
 }
 
