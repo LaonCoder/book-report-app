@@ -16,6 +16,9 @@ public struct SampleContentView: View {
                 NavigationLink(destination: BookFlipView()) {
                     Text("Page flip")
                 }
+                NavigationLink(destination: MarkDownEditorView()) {
+                    Text("Markdown Editor")
+                }
             }
             .navigationTitle("Sample App")
         }
