@@ -19,6 +19,9 @@ public struct SampleContentView: View {
                 NavigationLink(destination: MarkDownEditorView()) {
                     Text("Markdown Editor")
                 }
+                NavigationLink(destination: MovableGridView()) {
+                    Text("Movable Grid")
+                }
             }
             .navigationTitle("Sample App")
         }
